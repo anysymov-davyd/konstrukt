@@ -7,6 +7,7 @@
 }
 
 body{
+    scroll-behavior: smooth;
     width:100%;
     height:100%;
     overflow-x: hidden;
@@ -68,19 +69,62 @@ img[src="../img/symbol/triangle.svg"]{
     visibility: hidden;
 }
 
-@media only screen and (max-width: 980px) and (min-width:320px){
+@media only screen and (max-width:1002px){
     .grid_preview .wrapper .flex_container{
+        display:flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .grid_preview .wrapper .first_row{
-        margin:0;
-        margin-bottom:50px;
+    .grid_preview .wrapper .flex_container .first_row{
+        margin:40px;
+        margin-top:0;
     }
 
-    .primary_text, .secondary_text{text-align: justify;}
+    @media only screen and (max-width:600px){
+        .grid_preview .wrapper .flex_container .first_row{
+            margin:0 !important;
+            margin-bottom:40px !important;
+        }
 
+        .grid_preview center{
+            margin-bottom:50px !important;
+        }
+
+        @media only screen and (max-width:530px) and (min-width:390px){
+            .grid_preview .wrapper .second_row h3{
+                font-size: 19.2px !important;
+                line-height: 23.2px !important;
+                padding-top:12px !important;
+                padding-left:11.2px !important;
+            }
+            
+            .grid_preview .wrapper .second_row div{
+                width:112px !important;
+                height:179.2px !important;
+                margin:0 8px !important;
+            }
+        }
+
+        @media only screen and (max-width:390px){            
+            .grid_preview .wrapper .second_row h3{
+                font-size: 14.4px !important;
+                line-height: 17.4px !important;
+                padding-top:8.4px !important;
+                padding-left:8.4px !important;
+                font-size:14.4px !important;
+            }
+            
+            .grid_preview .wrapper .second_row div{
+                width:84px !important;
+                height:134.4px !important;
+                margin:0 6px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width:320px){
     .grid_content .wrapper{
         flex-wrap: wrap;
         flex-direction: column;
@@ -88,7 +132,7 @@ img[src="../img/symbol/triangle.svg"]{
 
     .grid_content .wrapper div{
         margin-bottom:20px;
-        margin-right:0;
+        margin-right:0 !important;
     }
 
     .grid_content .wrapper div:last-child{
@@ -109,7 +153,7 @@ img[src="../img/symbol/triangle.svg"]{
     }
 
     .capabilities a{
-        margin:40px 0;
+        margin:40px 0 !important;
         margin-bottom: 30px;
         max-width:330px;
         text-align: justify;
@@ -135,18 +179,7 @@ img[src="../img/symbol/triangle.svg"]{
         margin-top:20px;
     }
 
-    .grid_preview .wrapper .flex_container .second_row .icon_preview{
-        width:105px;
-        height:168px;
-    }
-
-    .grid_preview .wrapper .flex_container .second_row .icon_preview h3{
-        padding-top:11.25px;
-        padding-left:10.5px;
-        font-size:18px;
-    }
-
-    .prefooter{margin-top:57px;}
+    .prefooter{margin-top:57px !important}
 }
 
 @media only screen and (max-width: 514px){
@@ -184,49 +217,45 @@ img[src="../img/symbol/triangle.svg"]{
 
 @media only screen and (max-width: 390px){
     .fullscreen h1{
-        font-size:50px;
+        font-size:50px !important;
     }
 
     .fullscreen a{
-        font-size:10px;
-    }
-
-    .grid_preview .second_row div{
-        width:84px !important;
-        height:134.4px !important;
-    }
-
-    .grid_preview .second_row h3{
-        padding-top:9px !important;
-        padding-left:8.4px !important;
-        font-size:14.4px !important;
-        line-height: 11px;
+        font-size:10px !important;
     }
 
     .grid_content{
-        margin-top:64px;
+        margin-top:64px !important;
     }
     
     .grid_content h3{
-        font-size:12.8px;
-        line-height: 15.36px;
+        font-size:12.8px !important;
+        line-height: 15.36px !important;
     }
     
     .grid_content .wrapper div{
-        padding:14.08px;
-        width:236.264px;
-        margin-right:22.4px;
-        margin-right:0;
+        padding:14.08px !important;
+        width:236.264px !important;
+        margin-right:0 !important;
     }
     
     .grid_content img{
-        width: 52.496px;
-        height: 60px;
+        width: 52.496px !important;
+        height: 60px !important;
     }
     
     .grid_content p{
-        line-height:18.4px;
-        font-size:10.4px;
+        line-height:18.4px !important;
+        font-size:10.4px !important;
+    }
+
+    .prefooter{
+        margin-top:0 !important;
+    }
+
+    .wrapper{
+        padding-left:10px !important;
+        padding-right:10px !important;
     }
 }
 
@@ -464,8 +493,6 @@ header .wrapper{
 }
 
 .capabilities .title{
-    height:36px;
-    float:left;
 }
 
 .capabilities h3{
@@ -487,7 +514,7 @@ header .wrapper{
 .capabilities a{
     font-size:11px;
     color:#48555B;
-    width: 405px;
+    max-width: 405px;
     line-height: 19px;
     padding:0;
     margin:0;
