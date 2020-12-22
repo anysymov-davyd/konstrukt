@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.addEventListener('scroll', () => el.setAttribute('style', 'background-position-y:' + window.pageYOffset / 2 + 'px'), 10)
+    document.addEventListener('scroll', () => el.setAttribute('style', 'background-position-y:' + window.pageYOffset / 2.5 + 'px'), 10)
     const
         el     = document.getElementById('bg')
         button = document.getElementById('hamb')
