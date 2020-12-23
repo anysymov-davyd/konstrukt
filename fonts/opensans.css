@@ -1,2 +1,2 @@
-@font-face{font-family:OpenSansBoldExtra;src:url('OpenSans-ExtraBold.ttf')}
-@font-face{font-family:OpenSansRegular;src:url('OpenSans-Regular.ttf')}
+@font-face{font-family:OpenSansBoldExtra;src:url('OpenSans-ExtraBold.ttf');font-display: swap;}
+@font-face{font-family:OpenSansRegular;src:url('OpenSans-Regular.ttf');font-display: swap;}
