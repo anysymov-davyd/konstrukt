@@ -260,7 +260,7 @@ img[src="../img/symbol/triangle.svg"]{
 }
 
 .fullscreen{
-    background-image:url('img/background/bgtop.webp');
+    background-image:url(img/background/bgtop.webp);
     background-size:cover;
     background-color:#262F3E;
     background-position-x:50%;
